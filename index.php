@@ -11,7 +11,20 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-         echo 'Hola Mundo';
+         $miconn = new mysqli("localhost", "root", "avaras08", "datosPersonales");
+                if ($miconn->connect_errno) {
+                echo "Fallo al conectar a MySQL: (" . $miconn->connect_errno . ") " . $miconn->connect_error;
+        }
+        echo $miconn->host_info . "\n";
+        
+        /* Consultas de selección que devuelven un conjunto de resultados */
+        if ($resultado = $miconn->query("SELECT * FROM persona")) {
+            echo "La selección devolvió ". $resultado->num_rows." Filas";
+
+            /* liberar el conjunto de resultados */
+            $resultado->close();
+        }
+
         ?>
     </body>
 </html>
