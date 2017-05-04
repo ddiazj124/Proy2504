@@ -20,4 +20,3 @@ $idpersona = $_POST["idPersona"];
         
 ?>
 
-<br>

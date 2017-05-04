@@ -21,5 +21,4 @@
 ?>
 
     <input type="submit" value="Borrar Persona">
-    <br>
 </form>
