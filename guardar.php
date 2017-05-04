@@ -14,7 +14,7 @@
         
         /* Consultas de selección que devuelven un conjunto de resultados */
         if ($resultado = $miconn->query($sql)) {
-
+            echo $resultado;
             /* liberar el conjunto de resultados */
             $miconn->close();
         }
