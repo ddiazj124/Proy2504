@@ -17,6 +17,8 @@ and open the template in the editor.
         }
         echo $miconn->host_info . "\n";
         
+        
+        
         /* Consultas de selección que devuelven un conjunto de resultados */
         if ($resultado = $miconn->query("SELECT * FROM persona")) {
             echo "La selección devolvió ". $resultado->num_rows." Filas";
@@ -26,5 +28,7 @@ and open the template in the editor.
         }
 
         ?>
+        
+        
     </body>
 </html>
