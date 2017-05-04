@@ -17,4 +17,7 @@ $idpersona = $_POST["idPersona"];
             echo $fila["idpersona"]."/".$fila["nombre"]."\n <br>";
         }
         
+        
 ?>
+
+<br>

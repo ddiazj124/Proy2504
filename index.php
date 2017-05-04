@@ -30,6 +30,6 @@ and open the template in the editor.
         ?>
         <a href="formulario.php">Formulario</a><br>
         <a href="listadoPersonas.php">Listado Personas</a><br>
-        
+        <br>
     </body>
 </html>
